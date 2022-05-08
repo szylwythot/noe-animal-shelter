@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+/* -----------End of CSS Reset ----------*/
+
+* {
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 80px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  font-weight: 700;
+}
+/*header .logo {
+  display: inline-block;
+}*/
+
+.logoImage {
+  height: 80px;
+  width: auto;
+}
+header .logotitle {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.open, .mail, .phone {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+.open p,
+.mail p,
+.phone p {
+  padding: 0 10px 0;
+}
+/*-----------End of Header-----------*/
+
+section {
+  position: relative;
+  padding-top: 50px;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  filter: invert(1);
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.showcase {
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active {
+  position: relative;
+  transition: 0.5s;
+  right: 300px;
+}
+
+#doggies {
+  padding-top: 150px;
+  background-image: url("https://wallpaperaccess.com/full/1863052.jpg");
+  background-repeat: inherit;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5s;
+  z-index: 2;
+}
+#doggies img {
+  height: 200px;
+}
+#doggies.active {
+  position: relative;
+  transition: 0.5s;
+  right: 300px;
+}
+
+.showcase video {
+  position: absolute;
+  right: 0;
+  width: 65%;
+  height: 80%;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text img {
+  width: 25%;
+  height: auto;
+  padding-bottom: 40px;
+}
+.text h2 {
+  font-family: Syncopate;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+  letter-spacing: 0.018em;
+  text-transform: uppercase;
+}
+.text h3 {
+  font-family: Syncopate;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  margin: 30px 0;
+  font-weight: 400;
+  max-width: 700px;
+  line-height: 1.5em;
+}
+.text a {
+  display: inline-block;
+  font-size: 20px;
+  background: #ffd600;
+  padding: 15px 40px;
+  border: 3px solid black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 0.15em;
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 0.3em;
+}
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+#doggies {
+  padding-top: 150px;
+  background-image: url("https://wallpaperaccess.com/full/1863052.jpg");
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5s;
+  z-index: 2;
+  font-family: Montserrat;
+}
+#doggies img {
+  height: 200px;
+}
+#doggies.active {
+  position: relative;
+  transition: 0.5s;
+  right: 300px;
+}
+
+.filter {
+  margin-left: 50px;
+  padding: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid rgb(194, 194, 194);
+  border-radius: 6px;
+  background: #ffffff;*/
+  /*box-shadow: inset 7px 7px 14px #d9d9d9, inset -7px -7px 14px #ffffff;*/
+}
+button {
+  min-width: 180px;
+  padding: 15px;
+  margin-right: 80px;
+  border-radius: 3px;
+  background-color: #ffd600;
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 14px #d9ca00, -7px -7px 14px #ffff00;*/
+}
+button:hover {
+  background-color: black;
+  color: #ffd600;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 15px;
+  background: #ffffffc5;
+  box-shadow: inset 7px 7px 14px #d9d9d9, inset -7px -7px 14px #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+svg {
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+svg rect {
+  fill: rgba(255, 255, 255);
+  backdrop-filter: blur(10px);
+  mask: url(#mask);
+  width: 100%;
+  height: 100%;
+}
+
+path {
+  transform: scale(0.5) translate(120%, 30%) rotate(15deg);
+}
+
+/*Doggies section styling*/
+/*.dropdown {
+  margin-right: 50px;
+  margin-left: 50px;
+}*/
+
+
+.dropList {
+  display: none;
+  position: absolute;
+  min-width: 230px;
+  padding: 30px;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  z-index: 1;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropList a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropList.active {
+  display: block;
+}
+
+/* start of checkboxes */
+/* The container */
+.chbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.chbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chbox-container input:checked ~ .checkmark {
+  background-color: rgb(77, 77, 77);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.chbox-container:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.chbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+/* The container */
+.chbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.chbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* end of checkboxes */
+
+.container h1 {
+  width: 100%;
+  height: 100px;
+  font-size: 40px;
+}
+
+.animalcard {
+  width: 200px;
+  height: 310px;
+  margin: 20px 60px 20px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 1.5em 2.5em -0.5em rgb(0 0 0 / 10%);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+.animalcard:hover {
+  background: #ffee00;
+  transform: scale(1.1);
+}
+.animalcard img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.animaldata {
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.animaldata h2 {
+  font-size: 25px;
+}
+
+.animaldata p {
+  font-size: 18px;
+}

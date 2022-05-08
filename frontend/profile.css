@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* End of CSS Reset */
+
+#root {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Oxygen";
+  font-weight: 400;
+  background-image: linear-gradient(#ffd600, #ffffff);
+}
+
+/* Header */
+/* 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logoImage {
+  height: 100px;
+}
+
+header .logo {
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ */
+/* Left Side */
+.imgbox {
+  position: absolute;
+  top: 24%;
+  left: 14%;
+  height: 338px;
+  width: 235px;
+}
+
+img.twa {
+  position: absolute;
+  height: 250px;
+  width: 235px;
+  object-fit: cover;
+}
+
+img.twb {
+  position: absolute;
+  bottom: 0;
+  height: 77px;
+  width: 67px;
+  object-fit: cover;
+}
+
+img.twc {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 77px;
+  width: 67px;
+  object-fit: cover;
+}
+
+img.twd {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 77px;
+  width: 67px;
+  object-fit: cover;
+}
+
+.buttons {
+  position: absolute;
+  top: 105%;
+  
+  height: 105px;
+  width: 237px;
+  background-color: #ffd600;
+  border: 4px solid #000000;
+}
+
+.buttons button.a:hover {
+  background-color: #000000;
+  color: #ffd600;
+}
+.buttons button.b:hover {
+  background-color: #000000;
+  color: #ffd600;
+}
+
+.buttons button.a {
+  position: absolute;
+  top: 7px;
+  left: 12%;
+  line-height: 0;
+  width: 180px;
+  height: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: 0.4s;
+  font-size: 13px;
+}
+
+.buttons button.b {
+  position: absolute;
+  bottom: 7px;
+  left: 12%;
+  width: 180px;
+  font-size: 14px;
+  line-height: 0;
+  height: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+/* Right Side  */
+
+.box {
+  position: absolute;
+  top: 24%;
+  right: 30.5%;
+  height: 115px;
+  width: 400px;
+  border-bottom: 1px solid #000000;
+}
+
+.box p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h2.background {
+  position: absolute;
+  top: 42%;
+  right: 51.5%;
+}
+
+p.story {
+  position: absolute;
+  top: 49%;
+  left: 41.8%;
+  height: 274px;
+  text-align: left;
+  width: 54%;
+  border-bottom: 1px solid #000000;
+}
